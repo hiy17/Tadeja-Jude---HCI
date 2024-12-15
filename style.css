@@ -1,4 +1,3 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   color: #333;
 }
 
-/* Header Styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +47,6 @@ nav ul li a:hover {
   color: #007bff;
 }
 
-/* Search Container Styling */
 .search-container {
   position: relative;
 }
@@ -80,7 +77,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-/* Login Button Styling */
 .login-button {
   background-color: #006677;
   color: #fff;
@@ -99,7 +95,6 @@ nav ul li a:hover {
   background-color: rgb(0, 31, 122);
 }
 
-/* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
@@ -149,7 +144,6 @@ nav ul li a:hover {
   max-width: 400px;
 }
 
-/* Features Section */
 .features {
   display: flex;
   justify-content: space-evenly;
@@ -179,7 +173,6 @@ header .logo img {
   max-width: 100%;
 }
 
-/* Dropdown Menu */
 .dropdown {
   position: relative;
 }
@@ -228,7 +221,6 @@ header .logo img {
   color: #006677;
 }
 
-/* Media Queries */
 @media (max-width: 1024px) {
   header {
     flex-wrap: wrap;
@@ -315,8 +307,6 @@ header .logo img {
   color: #003a47;
 }
 
-
-/* Overlay for the popup */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -330,7 +320,6 @@ header .logo img {
   z-index: 1000;
 }
 
-/* Popup container */
 .popup-container {
   position: relative;
   background: linear-gradient(to right, #f5e1dc, #b0dbf3);
@@ -341,8 +330,6 @@ header .logo img {
   max-width: 90%;
   animation: popup-fade-in 0.4s ease;
 }
-
-/* Popup animations */
 @keyframes popup-fade-in {
   from {
     transform: scale(0.8);
@@ -354,7 +341,6 @@ header .logo img {
   }
 }
 
-/* Close button */
 .popup-close {
   position: absolute;
   top: 10px;
@@ -372,7 +358,6 @@ header .logo img {
   color: #e74c3c;
 }
 
-/* Form styles */
 .popup-container h2 {
   margin-top: 0;
   text-align: center;
@@ -400,7 +385,6 @@ header .logo img {
   box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
 }
 
-/* Password field container */
 .password-container {
   position: relative;
 }
@@ -409,7 +393,6 @@ header .logo img {
   padding-right: 40px;
 }
 
-/* Toggle button for password visibility */
 .password-toggle {
   position: absolute;
   top: 50%;
@@ -428,12 +411,10 @@ header .logo img {
   color: #0056b3;
 }
 
-/* Display the popup */
 .popup-overlay.active {
   display: flex;
 }
 
-/* Password field container */
 .password-container {
   position: relative;
 }
@@ -465,10 +446,9 @@ header .logo img {
 }
 
 .password-container .password-toggle i {
-  pointer-events: none; /* Prevent click events on the icon itself */
+  pointer-events: none; 
 }
 
-/* Button Styles */
 .login-button1 {
   background-color: #006677;
   color: #fff;
@@ -493,13 +473,10 @@ header .logo img {
   transform: scale(0.98);
 }
 
-/* Additional padding for the header */
 #loginpopup {
   padding: 15px;
 }
 
-/* Sign Up */
-/* Overlay for the popup */
 .popup-overlay1 {
   position: fixed;
   top: 0;
@@ -513,7 +490,6 @@ header .logo img {
   z-index: 1000;
 }
 
-/* Popup container */
 .popup-container1 {
   position: relative;
   background: linear-gradient(to right, #f5e1dc, #b0dbf3);
@@ -525,7 +501,6 @@ header .logo img {
   animation: popup-fade-in1 0.4s ease;
 }
 
-/* Popup animation */
 @keyframes popup-fade-in1 {
   from {
     transform: scale(0.8);
@@ -537,7 +512,6 @@ header .logo img {
   }
 }
 
-/* Close button */
 .popup-close1 {
   position: absolute;
   top: 10px;
@@ -555,7 +529,6 @@ header .logo img {
   color: #ff5757;
 }
 
-/* Title */
 .popup-container1 h2 {
   margin-top: 0;
   text-align: center;
@@ -563,7 +536,6 @@ header .logo img {
   color: #333;
 }
 
-/* Form styles */
 .popup-container1 form {
   display: flex;
   flex-direction: column;
@@ -584,21 +556,19 @@ header .logo img {
   box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
 }
 
-/* Password field container */
 .password-container1 {
   position: relative;
 }
 
 .password-container1 input {
   width: 100%;
-  padding-right: 40px; /* Space for the toggle icon */
+  padding-right: 40px; 
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 12px;
 }
 
-/* Toggle button for password visibility */
 .password-container1 .password-toggle1 {
   position: absolute;
   top: 50%;
@@ -621,10 +591,9 @@ header .logo img {
 }
 
 .password-container1 .password-toggle1 i {
-  pointer-events: none; /* Prevent click events on the icon itself */
+  pointer-events: none;
 }
 
-/* Sign-up button */
 .login-button2 {
   background-color: #006677;
   color: #fff;
@@ -649,7 +618,6 @@ header .logo img {
   transform: scale(0.98);
 }
 
-/* Display the popup when active */
 .popup-overlay1.active {
   display: flex;
   opacity: 1;
