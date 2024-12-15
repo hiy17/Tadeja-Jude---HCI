@@ -96,10 +96,8 @@ A sleek and interactive e-commerce website showcasing premium sportswear, built 
   - Product catalog and shopping cart functionality.
 ## Creator ✍️
 
----
 
-Created with ❤️ by [Jude Tadeja].  
+Created with ❤️ by **Jude Tadeja**.  
 CS-3103
 Feel free to reach out for suggestions or collaborations!
 
----
