@@ -98,6 +98,6 @@ A sleek and interactive e-commerce website showcasing premium sportswear, built 
 
 
 Created with ❤️ by **Jude Tadeja**.  
--CS-3103
--Feel free to reach out for suggestions or collaborations!
+   -CS-3103
+   -Feel free to reach out for suggestions or collaborations!
 
