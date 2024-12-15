@@ -1,14 +1,11 @@
 # JT Sports Wear 🏋️‍♂️👟
 
----
 
 A sleek and interactive e-commerce website showcasing premium sportswear, built with **HTML**, **CSS**, and **JavaScript**.
 
----
 
 ## Overview 🛍️
 
----
 
 "JT Sports Wear" delivers an elegant and responsive interface to elevate your online shopping experience. Key features include:
 
@@ -18,11 +15,9 @@ A sleek and interactive e-commerce website showcasing premium sportswear, built 
 ✨ **Feature Highlights**: Visual perks such as free shipping, risk-free purchases, and 24/7 support.  
 ✨ **Interactive Elements**: Dynamic login/sign-up popups, password visibility toggles, and search functionality.
 
----
 
 ## System Architecture 🏗️
 
----
 
 ### Frontend Design 🎨
 
@@ -35,11 +30,9 @@ A sleek and interactive e-commerce website showcasing premium sportswear, built 
 - **Images**: Branding and promotional visuals (e.g., `logo.png`, `free_shipping.png`).  
 - **Icons**: Font Awesome icons for seamless UI enhancements.
 
----
 
 ## Features ✨
 
----
 
 - **Navigation Bar** 🧭: Easy access to Home, Products, and About pages.  
 - **Hero Section** 💪: A call-to-action encouraging user engagement.  
@@ -47,11 +40,9 @@ A sleek and interactive e-commerce website showcasing premium sportswear, built 
 - **Feature Highlights** 🌟: Key selling points like free shipping and 24/7 support.  
 - **Responsive Design** 📱: Flawless usability on desktop, tablet, and mobile devices.
 
----
 
 ## Installation and Usage 🛠️
 
----
 
 ### Prerequisites ✅
 
@@ -74,22 +65,17 @@ A sleek and interactive e-commerce website showcasing premium sportswear, built 
    - Open `index.html` in your browser.  
    - Or, use a Live Server extension in your editor.
 
----
 
 ## Customization Options 🎨
 
----
 
 - **Style Enhancements**:  
   Modify `style.css` for layout or design updates.  
 - **Functionality Tweaks**:  
   Update `home.js` for custom behaviors or new features.
 
----
 
 ## Testing Features 🧪
-
----
 
 1. **Navigation**:  
    - Verify links to pages like `products.html` and `about.html` work correctly.
@@ -101,12 +87,19 @@ A sleek and interactive e-commerce website showcasing premium sportswear, built 
 3. **Responsiveness**:  
    - Use browser dev tools to check layout across various devices.
 
----
 
 ## Future Enhancements 🚀
 
----
 
 - **Backend Integration** 🔒:  
   - User authentication and account management.  
   - Product catalog and shopping cart functionality.
+## Creator ✍️
+
+---
+
+Created with ❤️ by [Jude Tadeja].  
+CS-3103
+Feel free to reach out for suggestions or collaborations!
+
+---
