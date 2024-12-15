@@ -7,53 +7,51 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="assets/logo.png" alt="Logo">
+      <img src="assets/logo.png" alt="JT Sports Wear Logo" aria-label="JT Sports Wear Logo">
     </div>
     <div class="right-section">
       <nav>
         <ul>
-          <li><a href="#" id="home">Home</a></li>
+          <li><a href="#" id="home" aria-label="Home">Home</a></li>
           <li class="dropdown">
-            <a href="#">Products</a>
+            <a href="#" aria-label="Products dropdown menu">Products</a>
             <ul class="dropdown-menu">
-              <li><a href="http://127.0.0.1:5500/products.html">Shoes</a></li>
-              <li><a href="http://127.0.0.1:5500/clothing.html">Clothing</a></li>
+              <li><a href="http://127.0.0.1:5500/products.html" aria-label="Shoes page">Shoes</a></li>
+              <li><a href="http://127.0.0.1:5500/clothing.html" aria-label="Clothing page">Clothing</a></li>
             </ul>
           </li>
-          <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+          <li><a href="http://127.0.0.1:5500/about.html" aria-label="About page">About</a></li>
         </ul>
       </nav>
       
-      
       <div class="search-container">
-        <input type="text" placeholder="Search...">
-        <i class="fas fa-search"></i>
-        <button type="submit"></button>
+        <input type="text" placeholder="Search..." aria-label="Search input">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <button type="submit" aria-label="Submit search"></button>
       </div>
-      <a href="#" class="login-button">Login</a>
-        <div class="popup-overlay">
-          <div class="popup-container">
-            <button class="popup-close">&times;</button>
-            <h2 id="loginpopup">Login</h2>
-            <form>
-              <input type="text" placeholder="Username" required />
-              <div class="password-container">
-                <input type="password" id="password" placeholder="Password" required />
-                <button type="button" class="password-toggle">
-                  <i class="fa fa-eye"></i>
-                </button>
-              </div>              
-              <button type="submit" class="login-button1">Login</button>
-            </form>
-          </div>
+      
+      <a href="#" class="login-button" aria-label="Login">Login</a>
+      <div class="popup-overlay">
+        <div class="popup-container">
+          <button class="popup-close" aria-label="Close login popup">&times;</button>
+          <h2 id="loginpopup" aria-label="Login popup title">Login</h2>
+          <form>
+            <input type="text" placeholder="Username" aria-label="Enter username" required>
+            <div class="password-container">
+              <input type="password" id="password" placeholder="Password" aria-label="Enter password" required>
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>              
+            <button type="submit" class="login-button1" aria-label="Submit login">Login</button>
+          </form>
         </div>
+      </div>
     </div>
   </header>
   
@@ -68,47 +66,48 @@
         confident, and ready to succeed. Shop now for athletic gear where style
         meets function!
       </p>
-      <a href="#" class="cta">Sign Up</a>
+      <a href="#" class="cta" aria-label="Sign Up">Sign Up</a>
 
-        <div class="popup-overlay1">
-          <div class="popup-container1">
-            <button class="popup-close1">&times;</button>
-            <h2 id="signuppopup">Sign Up</h2>
-            <form>
-              <input type="text" id="name1" placeholder="Full Name" required />
-              <input type="text" id="username1" placeholder="Username" required />
-              <div class="password-container1">
-                <input type="password" id="password1" placeholder="Password" required />
-                <button type="button" class="password-toggle1">
-                  <i class="fa fa-eye"></i>
-                </button>
-              </div>                        
-              <button type="submit" class="login-button1">Sign Up</button>
-            </form>
-          </div>
+      <div class="popup-overlay1">
+        <div class="popup-container1">
+          <button class="popup-close1" aria-label="Close sign-up popup">&times;</button>
+          <h2 id="signuppopup" aria-label="Sign-up popup title">Sign Up</h2>
+          <form>
+            <input type="text" id="name1" placeholder="Full Name" aria-label="Enter full name" required>
+            <input type="text" id="username1" placeholder="Username" aria-label="Enter username" required>
+            <div class="password-container1">
+              <input type="password" id="password1" placeholder="Password" aria-label="Enter password" required>
+              <button type="button" class="password-toggle1" aria-label="Toggle password visibility">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>                        
+            <button type="submit" class="login-button1" aria-label="Submit sign-up">Sign Up</button>
+          </form>
         </div>
+      </div>
 
     </div>
 
     <div class="product-image">
-      <img src="assets/shoe.png" alt="Shoe">
+      <img src="assets/shoe.png" alt="Shoe" aria-label="Featured product: Shoe">
     </div>
   </section>
 
   <div class="features">
     <div>
-      <img src="assets/free_shipping.png" alt="Free Shipping">
+      <img src="assets/free_shipping.png" alt="Free Shipping icon" aria-label="Free Shipping icon">
       <p>Free Shipping on all orders</p>
     </div>
     <div>
-      <img src="assets/risk_free.png" alt="Join Risk-Free">
+      <img src="assets/risk_free.png" alt="Risk-Free Guarantee icon" aria-label="Risk-Free Guarantee icon">
       <p>Join Risk-Free <br> 30 days refund</p>
     </div>
     <div>
-      <img src="assets/support.png" alt="Support 24/7">
+      <img src="assets/support.png" alt="24/7 Support icon" aria-label="24/7 Support icon">
       <p>Support 24/7 <br> Online 24 hours</p>
     </div>
   </div>
+
   <script src="home.js"></script>
 </body>
 </html>
