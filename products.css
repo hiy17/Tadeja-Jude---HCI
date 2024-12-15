@@ -1,0 +1,352 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f5e1dc, #b0dbf3);
+    color: #333;
+}
+
+h3, p {
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: transparent;
+}
+
+header .logo img {
+    padding-top: 20px;
+    height: 150px;
+    max-height: 150px;
+}
+
+header .right-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    padding: 10px 15px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    height: 40px;
+}
+
+.search-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.cart-button {
+    background-color: #006677;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* background-color: #006677;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+.cart-button:hover {
+    background-color: rgb(0, 31, 122);
+}
+
+/* Hero Section */
+.hero {
+    /* background: url(https://images.pexels.com/photos/2331069/pexels-photo-2331069.jpeg?auto=compress&cs=tinysrgb&w=600); */
+    color: white;
+    background-color: #d2d2d2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Carousel Section */
+
+.carousel {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+    flex: 1 0 calc(20% - 20px); /* 5 cards in the row */
+    max-width: calc(20% - 20px);
+    margin: 10px;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.carousel-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.carousel-card .buy-button {
+    display: inline-block;
+    background-color: #006677;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.carousel-card .buy-button:hover {
+    background-color: #004d5e;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-card .buy-button:active {
+    background-color: #003a47;
+    transform: translateY(0);
+}
+
+/* Animation for Carousel Cards */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes imageFadeInScale {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Carousel Arrow Buttons */
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 1024px) {
+    .carousel-card {
+        flex: 1 0 calc(33.33% - 20px); /* Show 3 cards on medium screens */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-card {
+        flex: 1 0 calc(50% - 20px); /* Show 2 cards on small screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-card {
+        flex: 1 0 calc(100% - 20px); /* Show 1 card on extra small screens */
+        max-width: calc(100% - 20px);
+    }
+}
+
+#product{
+    color: #003a47;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative; /* Establishes a positioning context for the dropdown menu */
+}
+
+/* Style for the dropdown trigger link (e.g., "Products") */
+.dropdown > a {
+    text-decoration: none; /* Removes the underline from the text */
+    color: #333; /* Sets the text color to dark gray */
+    font-weight: bold; /* Makes the text bold */
+    position: relative; /* Allows for potential positioning adjustments */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+/* Style for the dropdown menu container */
+.dropdown-menu {
+    position: absolute; /* Positions the menu relative to the dropdown container */
+    flex-direction: column; /* Ensures menu items stack vertically */
+    background: linear-gradient(to right, #ffffff, #f1f1f1); /* Adds a subtle gradient background */
+    padding: 10px 0; /* Adds vertical padding to the menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Creates a shadow for a 3D effect */
+    border-radius: 8px; /* Rounds the corners of the menu */
+    z-index: 10; /* Ensures the menu appears on top of other elements */
+    min-width: 50px; /* Sets a consistent minimum width for the menu */
+    opacity: 0; /* Initially hides the menu with transparency */
+    transform: translateY(-10px); /* Moves the menu slightly above its final position for animation */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animates opacity and position smoothly */
+}
+
+/* Show the dropdown menu when the parent is hovered */
+.dropdown:hover .dropdown-menu {
+    display: flex; /* Displays the menu as a flex container for vertical stacking */
+    opacity: 0.8; /* Makes the menu fully visible */
+    transform: translateY(0); /* Moves the menu to its final position */
+}
+
+/* Style for individual dropdown menu items */
+.dropdown-menu li {
+    padding: 5px 5px;/* Adds space around each menu item */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smoothly animates hover effects */
+}
+
+/* Style for the links inside dropdown menu items */
+.dropdown-menu li a {
+    text-decoration: none; /* Removes the underline from the links */
+    color: #333; /* Sets the text color to dark gray */
+    font-weight: bold; /* Makes the link text bold */
+    font-size: 13px;
+    display: block; /* Ensures the link spans the entire menu item */
+}
+
+/* Hover effect for links inside dropdown menu items */
+.dropdown-menu li:hover a {
+    color: #006677; /* Changes the text color to white on hover */
+}
+
+#shoes{
+    color: #003a47;
+}
